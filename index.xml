@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>skillingbeck</title>
-    <link>https://example.org/</link>
+    <link>https://skillingbeck.github.io/</link>
     <description>Recent content on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://skillingbeck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wisps I: Dualline</title>
-      <link>https://example.org/visuals/wisps-1/</link>
+      <link>https://skillingbeck.github.io/visuals/wisps-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/visuals/wisps-1/</guid>
+      <guid>https://skillingbeck.github.io/visuals/wisps-1/</guid>
       <description>&lt;p&gt;The first in a series. These are generated using a technique based on &lt;a href=&#34;https://img.inconvergent.net/print/orbitals.html&#34;&gt;Orbitals&lt;/a&gt; by Anders Hoff, which in turn was inspired by &lt;a href=&#34;http://www.complexification.net/gallery/machines/happyPlace/index.php&#34;&gt;Happy Place&lt;/a&gt; by Jared Tarbell.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Wisps II: Darknaught</title>
-      <link>https://example.org/visuals/wisps-2/</link>
+      <link>https://skillingbeck.github.io/visuals/wisps-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/visuals/wisps-2/</guid>
-      <description>&lt;p&gt;The second in the Wisps series, using the same technique as &lt;a href=&#34;https://example.org/visuals/wisps-1/&#34;&gt;Wisps I&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://skillingbeck.github.io/visuals/wisps-2/</guid>
+      <description>&lt;p&gt;The second in the Wisps series, using the same technique as &lt;a href=&#34;https://skillingbeck.github.io/visuals/wisps-1/&#34;&gt;Wisps I&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Wisps III: Brokencircle</title>
-      <link>https://example.org/visuals/wisps-3/</link>
+      <link>https://skillingbeck.github.io/visuals/wisps-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/visuals/wisps-3/</guid>
-      <description>&lt;p&gt;The third in the Wisps series, using the same technique as &lt;a href=&#34;https://example.org/visuals/wisps-1/&#34;&gt;Wisps I&lt;/a&gt; and &lt;a href=&#34;https://example.org/visuals/wisps-2/&#34;&gt;Wisps II&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://skillingbeck.github.io/visuals/wisps-3/</guid>
+      <description>&lt;p&gt;The third in the Wisps series, using the same technique as &lt;a href=&#34;https://skillingbeck.github.io/visuals/wisps-1/&#34;&gt;Wisps I&lt;/a&gt; and &lt;a href=&#34;https://skillingbeck.github.io/visuals/wisps-2/&#34;&gt;Wisps II&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>
