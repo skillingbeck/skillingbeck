@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <style>
+            :root {
+                --color1: #e63946;
+                --color2: #f1faee;
+                --color3: #a8dadc;
+                --color4: #457b9d;
+                --color5: #1d3557;
+            }
+
+
+             .dot {
+                height: 9%;
+                width: 9%;
+                background-color: var(--color3);
+                border-radius: 50%;
+                margin: 0.5%;
+                /* text-align: center;
+                vertical-align: middle;
+                font-size: 0.5rem; */
+                display:inline-block;
+            }
+
+            .queued {
+                fill: var(--color3);
+            }
+
+            .in-progress {
+                fill: var(--color1);
+            }
+
+            .done {
+                fill:  var(--color5);
+                color: #f1faee;
+            }
+
+            .chart {
+                width: 20em; 
+                /* height: 20em; */
+                margin: 1em;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="chart" id="chart1"></div>
+        <div class="chart" id="chart2"></div>
+        <div class="chart" id="chart3"></div>
+    </body>
+
+<script>
+    // https://medium.com/hackernoon/why-capacity-planning-needs-queueing-theory-without-the-hard-math-342a851e215c
+    // https://en.wikipedia.org/wiki/M/M/c_queue
+    var servers = 1
+    var arrivalRate = 0.45
+    var serviceRate = 0.5
+
+    function modelQueue(servers, arrivalRate, serviceRate) {
+        var utilisation = arrivalRate/(servers*serviceRate)
+
+        if(utilisation >= 1) {
+            console.log("Unbounded queue!")
+            return {serverUtilisation: utilisation}
+        }
+
+        var C = cFormula(servers, arrivalRate, serviceRate)
+
+        var averageCustomers = utilisation/(1 - utilisation)*C + servers*utilisation
+        var responseTime = C/(servers*serviceRate - arrivalRate) + 1/serviceRate
+        
+        return {
+            serverUtilisation: utilisation,
+            probabilityOfQueuing: C,
+            averageCustomersInSystem: averageCustomers,
+            responseTime: responseTime
+        }
+    }
+    
+    function cFormula(c, l, m) {
+        var p = l / (c*m) //utilisation
+        var sum = 0
+        for (k = 0; k <= c-1; k++) {
+            sum += Math.pow(c*p, k)/factorial(k)   
+        }
+        var multiplier = factorial(c)/Math.pow(c*p, c)
+        var denominator = 1 + (1-p)*multiplier*sum
+        return 1/denominator
+    }
+
+    function factorial(num)
+    {
+        var rval=1;
+        for (var i = 2; i <= num; i++)
+            rval = rval * i;
+        return rval;
+    }
+
+    // https://towardsdatascience.com/the-poisson-process-everything-you-need-to-know-322aa0ab9e9a
+    // M/M/c queues have arrivals based on the Poisson distribution
+    // which means inter-arrival times (time between arrivals) follow an exponential distribution
+    function generateInterArrival(rate) {
+        var u = Math.random(); // uniform[0,1)
+        return - Math.log(1.0-u)/rate
+    }
+
+    function scheduleNextArrival(rate, action, max) {
+        var arrivalTime = generateInterArrival(rate)
+        setTimeout(() => {
+            action(arrivalTime)
+            if(max > 1) {
+                scheduleNextArrival(rate, action, max - 1)
+            }
+        }, arrivalTime*1000)
+    }
+
+    function workerPool(workers, rate, data, notify) {
+        var pool = function() {}
+        pool.data = data
+        pool.rate = rate
+        pool.workers = []
+        for (var i = 0; i < workers; i++) {
+            pool.workers.push({id: i, state: "idle"})
+        }
+
+        pool.notify = function() {
+            var idleWorkers = pool.workers.filter(x => x.state == "idle")
+            if(idleWorkers.length > 0) {
+                pool.doWork(idleWorkers[0])
+
+            }
+            return pool
+        }
+
+        pool.doWork = function(worker) {
+            var tasks = pool.data.filter(x => x.state == "queued")
+            if (tasks.length == 0) { // no work left to do
+                worker.state = "idle"
+                return;
+            }
+            worker.state = "busy"
+            var task = tasks[0]
+            task.state = "in-progress"
+            notify()
+            scheduleNextArrival(pool.rate, () => {
+                task.state = "done"
+                notify()
+                pool.doWork(worker)
+            }, 1)
+
+            return pool
+        }
+
+        return pool
+    }
+
+    function queueModel() {
+        var model = function() {}
+        model.data = []
+
+        model.bind = function(base) {
+            model.base = d3.select(base)
+            model.graph = model.base.append("svg")
+                .attr("width", "200px")
+                .attr("height", "200px")
+                //.attr("viewBox", `0 -20 ${width} 33`);
+            model.annotation = model.base.append("p")
+            model.update()
+            return model
+        }
+
+        model.update = function() {
+            model.graph.selectAll("circle")
+                .data(model.data, d => d.id)
+                .join("circle")
+                    .attr("class", d => d.state)
+                    .attr("cx", (d,i) => (i % 10)*10+5 + "%")
+                    .attr("cy", (d,i) => Math.floor(i / 10)*10+5 + "%")
+                    .attr("r", "4.5%")
+                    //.text(d => `${d.id}`)
+            return model
+        }
+
+        model.workers = function(workers, rate) {
+            model.workerPool = workerPool(workers, rate, model.data, () => model.update())
+            return model
+        }
+
+        model.start = function(rate, max) {
+            model.annotation.text(`New tasks arrive ${rate} times per day on average. There are ${model.workerPool.workers.length} workers able to complete ${model.workerPool.rate} tasks per day on average.`)
+            scheduleNextArrival(rate, () => {
+                model.data.push({id: model.data.length, state: "queued"})
+                model.update()
+                model.workerPool.notify()
+            }, max)
+            return model
+        }
+
+        return model
+    }
+
+    var model1 = queueModel().bind("#chart1").workers(1, 1).start(5, 100)
+    var model1 = queueModel().bind("#chart2").workers(2, 1).start(5, 100)
+    var model1 = queueModel().bind("#chart3").workers(3, 1).start(5, 100)
+
+    
+    console.log(modelQueue(servers,arrivalRate,serviceRate))
+</script>
+</html>
