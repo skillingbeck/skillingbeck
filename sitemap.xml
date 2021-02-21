@@ -3,31 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://skillingbeck.github.io/categories/</loc>
+    <loc>https://skillingbeck.github.io/visuals/aloidia/</loc>
+    <lastmod>2021-02-21T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skillingbeck.github.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://skillingbeck.github.io/tags/</loc>
+    <lastmod>2021-02-21T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skillingbeck.github.io/visuals/</loc>
+    <lastmod>2021-02-21T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skillingbeck.github.io/visuals/wisps-1/</loc>
+    <loc>https://skillingbeck.github.io/visuals/inkdrop-1/</loc>
+    <lastmod>2021-02-07T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skillingbeck.github.io/visuals/wisps-2/</loc>
+    <loc>https://skillingbeck.github.io/visuals/radfold/</loc>
+    <lastmod>2021-02-01T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skillingbeck.github.io/visuals/wisps-3/</loc>
+    <lastmod>2021-01-23T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skillingbeck.github.io/visuals/wisps-2/</loc>
+    <lastmod>2021-01-22T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skillingbeck.github.io/visuals/wisps-1/</loc>
+    <lastmod>2021-01-21T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skillingbeck.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://skillingbeck.github.io/tags/</loc>
   </url>
   
 </urlset>
