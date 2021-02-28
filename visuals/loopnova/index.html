@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>skillingbeck</title>
+<meta name="description" content="Personal site">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://skillingbeck.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://skillingbeck.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://skillingbeck.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://skillingbeck.github.io/css/owl.theme.css">
+
+
+  <link href="https://skillingbeck.github.io/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+ 
+
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+
+<link href="https://skillingbeck.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://skillingbeck.github.io/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="https://skillingbeck.github.io/">skillingbeck</a></h1>
+    
+      <p class="sidebar-p">// Site Reliability Engineer 
+ 
+</p>
+    
+      <p class="sidebar-p">// DevOps enthusiast</p>
+    
+      <p class="sidebar-p">// Dabbler in generative art</p>
+    
+    <ul class="sidebar-menu">
+      
+        <li><a href="https://skillingbeck.github.io/visuals/">Visuals</a></li>
+      
+        <li><a href="https://skillingbeck.github.io/posts/">Thoughts</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  
+  
+  
+  <a href="https://www.linkedin.com/in/shaun-k-54438880/" data-animate-hover="pulse" class="external">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  
+  <a href="https://github.com/skillingbeck" data-animate-hover="pulse" class="external">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  
+  
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2020 Shaun Killingbeck |
+        
+        Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="https://skillingbeck.github.io/">skillingbeck</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Loopnova</h1>
+         <p>Some initial experiments with simulating slime mold <a href="https://en.wikipedia.org/wiki/Physarum_polycephalum">Physarum polycephalum</a> - from very simple mechanisms the mold is able to efficiently scavenge for and transport food through emergent networks of paths.</p>
+<p>The algorithm I used is heavily influenced by the one proposed by <a href="http://eprints.uwe.ac.uk/15260/1/artl.2010.16.2.pdf">Jeff Jones</a> and inspired by the blog piece by <a href="https://sagejenson.com/physarum">Sage Jenson</a>.</p>
+<hr>
+<video  width="100%" src="/images/visuals/loopnova/vid.mp4" type="video/mp4" autoplay loop>
+
+    <source >
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<hr>
+<p>My interest was piqued from reading Sage&rsquo;s post on Saturday evening, I proceeded to read Jeff&rsquo;s paper to understanding the algorithm before going to bed. Sunday I dived right into implementing it in Golang without any non-core libraries other than my own*. To my astonishment, after a few hours coding and despite having not written any tests** or run partial code at any point during the process, the program built and ran first time, producing some emerging patterns!</p>
+<hr>
+<p><img src="/images/visuals/loopnova/loopnova1.jpg" alt="Loopnova" title="Loopnova"></p>
+<hr>
+<p>These images/videos are from some initial simulations playing around with the &ldquo;sensor offset&rdquo;, and with the periodic nature of the simulations. There is a lot more space to experiment though ranging from</p>
+<ul>
+<li>fiddling with other parameters</li>
+<li>tweaking the underlying algorithm</li>
+<li>combining multiple systems that interact (e.g. repel each other)</li>
+<li>initial chemotrail distribution (e.g. perlin noise)</li>
+</ul>
+<p>I expect I will play with these in the future, and post them here if any are fruitful!</p>
+<hr>
+<p><img src="/images/visuals/loopnova/loopnova2.jpg" alt="Loopnova" title="Loopnova"></p>
+<hr>
+<video  width="100%" src="/images/visuals/loopnova/vid-tiled.mp4" type="video/mp4" autoplay loop>
+
+    <source >
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<hr>
+<p>*<em>The only place it would have been particularly useful would have been implementing the diffusion algorithm, and there are some libraries out there that could have done this on an Image (like GIFT), but in the end I decided to implement my own custom data structure for the trail map which I thought would be more efficient. This meant implementing my own mean filter for it. Also, other ones I had seen didn&rsquo;t seem to support wrapping pixels around at the edges, a specific feature I was interested in implementing.</em></p>
+<p>**<em>Terrible admission I know! Impatience got the better of me. That said, they way I see it, code for generative art is a very different beast to most code: firstly, it&rsquo;s not doing anything important that would need a high quality bar, and secondly &ldquo;happy accidents&rdquo; are quite important in generative art, so actually I don&rsquo;t want to be overly diligent. Like most things, the right answer probably lies somewhere in the middle - test the low level pieces to save yourself time on tearing your hair out looking for bugs, don&rsquo;t test the high level composition to allow for that margin for error (and speed of experimentation).</em></p>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="https://skillingbeck.github.io/js/jquery.min.js"></script>
+<script src="https://skillingbeck.github.io/js/bootstrap.min.js"></script>
+<script src="https://skillingbeck.github.io/js/jquery.cookie.js"> </script>
+<script src="https://skillingbeck.github.io/js/ekko-lightbox.js"></script>
+<script src="https://skillingbeck.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://skillingbeck.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://skillingbeck.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://skillingbeck.github.io/js/owl.carousel.min.js"></script>
+<script src="https://skillingbeck.github.io/js/front.js"></script>
+
+
+
+</body>
+</html>

@@ -6,10 +6,19 @@
     <description>Recent content on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Feb 2021 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Feb 2021 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Loopnova</title>
+      <link>https://skillingbeck.github.io/visuals/loopnova/</link>
+      <pubDate>Sun, 28 Feb 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/visuals/loopnova/</guid>
+      <description>&lt;p&gt;Some initial experiments with simulating slime mold &lt;a href=&#34;https://en.wikipedia.org/wiki/Physarum_polycephalum&#34;&gt;Physarum polycephalum&lt;/a&gt; - from very simple mechanisms the mold is able to efficiently scavenge for and transport food through emergent networks of paths.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Aloidia</title>
