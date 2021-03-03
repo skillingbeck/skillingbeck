@@ -6,10 +6,19 @@
     <description>Recent content on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Feb 2021 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Mar 2021 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dizoolexa</title>
+      <link>https://skillingbeck.github.io/visuals/dizoolexa/</link>
+      <pubDate>Wed, 03 Mar 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/visuals/dizoolexa/</guid>
+      <description>&lt;p&gt;20,000 particle trails through a simplex curl field&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Loopnova</title>
