@@ -6,10 +6,19 @@
     <description>Recent content in Works on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Mar 2021 08:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/works/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Daizy</title>
+      <link>https://skillingbeck.github.io/works/daizy/</link>
+      <pubDate>Fri, 19 Mar 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/works/daizy/</guid>
+      <description>&lt;p&gt;Comissioned (sort of&amp;hellip;)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Stratata</title>
