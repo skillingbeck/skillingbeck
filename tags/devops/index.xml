@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on skillingbeck</title>
+    <link>https://skillingbeck.github.io/tags/devops/</link>
+    <description>Recent content in devops on skillingbeck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Mar 2021 12:11:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://skillingbeck.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kanban And Wellbeing</title>
+      <link>https://skillingbeck.github.io/posts/kanban-and-wellbeing/</link>
+      <pubDate>Tue, 23 Mar 2021 12:11:20 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/posts/kanban-and-wellbeing/</guid>
+      <description>&lt;p&gt;I couldn&amp;rsquo;t agree more with Amy&amp;rsquo;s post &lt;a href=&#34;https://tech.ovoenergy.com/can-we-kanban/&#34;&gt;Can We Kanban?&lt;/a&gt; on the OVO Tech Blog, where she detailed their decision to switch from Scrum to Kanban.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

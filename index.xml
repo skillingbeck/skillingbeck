@@ -6,10 +6,19 @@
     <description>Recent content on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Mar 2021 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Mar 2021 12:11:20 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kanban And Wellbeing</title>
+      <link>https://skillingbeck.github.io/posts/kanban-and-wellbeing/</link>
+      <pubDate>Tue, 23 Mar 2021 12:11:20 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/posts/kanban-and-wellbeing/</guid>
+      <description>&lt;p&gt;I couldn&amp;rsquo;t agree more with Amy&amp;rsquo;s post &lt;a href=&#34;https://tech.ovoenergy.com/can-we-kanban/&#34;&gt;Can We Kanban?&lt;/a&gt; on the OVO Tech Blog, where she detailed their decision to switch from Scrum to Kanban.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rotralva</title>
@@ -117,6 +126,18 @@
       
       <guid>https://skillingbeck.github.io/works/wisps-1/</guid>
       <description>&lt;p&gt;The first in a series. These are generated using a technique based on &lt;a href=&#34;https://img.inconvergent.net/print/orbitals.html&#34;&gt;Orbitals&lt;/a&gt; by Anders Hoff, which in turn was inspired by &lt;a href=&#34;http://www.complexification.net/gallery/machines/happyPlace/index.php&#34;&gt;Happy Place&lt;/a&gt; by Jared Tarbell.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hi, I am Shaun.</title>
+      <link>https://skillingbeck.github.io/about/</link>
+      <pubDate>Sun, 26 Jul 2020 16:03:11 +0100</pubDate>
+      
+      <guid>https://skillingbeck.github.io/about/</guid>
+      <description>I am a Production Engineer, DevOps enthusiast and generative art hobbyist.
+ I have worn a variety of different hats over the years. In reverse chronological order:
+ Production Engineer Site Reliability Engineer (SRE) Developer Forensic Data Analyst E-Discovery Review Manager Mathematics and Statistics masters graduate   My professional interests include:
+ DevOps principals Continuous improvement CI/CD Cloud application security Infrastructure as code   My personal interests include:</description>
     </item>
     
   </channel>
