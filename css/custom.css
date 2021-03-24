@@ -24,3 +24,7 @@
     outline: none;
     display: block;
 }
+
+figcaption p {
+    text-align: center;
+}

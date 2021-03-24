@@ -6,10 +6,37 @@
     <description>Recent content in Tags on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Mar 2021 12:11:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Mar 2021 10:39:24 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>generative</title>
+      <link>https://skillingbeck.github.io/tags/generative/</link>
+      <pubDate>Wed, 24 Mar 2021 10:39:24 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>noise</title>
+      <link>https://skillingbeck.github.io/tags/noise/</link>
+      <pubDate>Wed, 24 Mar 2021 10:39:24 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/tags/noise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>perlin</title>
+      <link>https://skillingbeck.github.io/tags/perlin/</link>
+      <pubDate>Wed, 24 Mar 2021 10:39:24 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/tags/perlin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>devops</title>
