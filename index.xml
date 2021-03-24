@@ -6,10 +6,19 @@
     <description>Recent content on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Mar 2021 10:39:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Mar 2021 18:20:59 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Paradoxical Proximity</title>
+      <link>https://skillingbeck.github.io/works/paradoxical-proximity/</link>
+      <pubDate>Wed, 24 Mar 2021 18:20:59 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/works/paradoxical-proximity/</guid>
+      <description>&lt;p&gt;Two lonely entities close in space but unable to interact, perpetually searching for contact.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>10 Noise Transformations</title>
