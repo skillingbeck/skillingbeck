@@ -6,10 +6,19 @@
     <description>Recent content on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Mar 2021 18:20:59 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Mar 2021 11:23:37 +0000</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Haptic Hierachy</title>
+      <link>https://skillingbeck.github.io/works/haptic-hierachy/</link>
+      <pubDate>Fri, 26 Mar 2021 11:23:37 +0000</pubDate>
+      
+      <guid>https://skillingbeck.github.io/works/haptic-hierachy/</guid>
+      <description>&lt;p&gt;160,000 connected particles keep in touch with their soulmate, despite a class divide between swarms&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Paradoxical Proximity</title>
