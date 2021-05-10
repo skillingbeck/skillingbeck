@@ -6,10 +6,19 @@
     <description>Recent content in Works on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 May 2021 15:43:43 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 10 May 2021 08:11:21 +0100</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/works/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pulse II</title>
+      <link>https://skillingbeck.github.io/works/pulse-2/</link>
+      <pubDate>Mon, 10 May 2021 08:11:21 +0100</pubDate>
+      
+      <guid>https://skillingbeck.github.io/works/pulse-2/</guid>
+      <description>&lt;p&gt;Trails of pulsating particles chase each other in a vacuum&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Plasma</title>
