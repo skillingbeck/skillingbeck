@@ -6,10 +6,19 @@
     <description>Recent content in Works on skillingbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 May 2021 22:20:03 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 21:27:33 +0100</lastBuildDate>
     
 	<atom:link href="https://skillingbeck.github.io/works/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fluid</title>
+      <link>https://skillingbeck.github.io/works/fluid/</link>
+      <pubDate>Mon, 24 May 2021 21:27:33 +0100</pubDate>
+      
+      <guid>https://skillingbeck.github.io/works/fluid/</guid>
+      <description>&lt;p&gt;Simulating dye in a fluid&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Pulse IV</title>
